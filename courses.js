@@ -1,3 +1,4 @@
+var fs = require("fs")
 class Course {
     constructor(name, credits, department, hasRecaitaiton, hasLab, Prerequisites, preStanding, teachers) {
         this.name = name;
@@ -10,26 +11,27 @@ class Course {
         this.preStanding = preStanding
         this.teachers = teachers
     }
-    printPrequisistes(){
-        console.log(this.Prerequisites)
-    }
+    // printPrequisistes(){
+    //     console.log(this.Prerequisites)
+    // }
 }
 class Plan{
-    constructor(term1, term2, term3, term4, term5, term6, term7,summerTerm ,term9) {
+    constructor(term1, term2, term3, term4, term5, term6,summerTerm ,term7,term8) {
         this.firstTerm = term1;
         this.secondTerm = term2;
         this.thirdterm = term3;
         this.fourthTerm = term4;
         this.fifthTerm = term5;
         this.sixthTerm = term6;
-        this.seventhTerm = term7;
         this.summerTerm = summerTerm
-        this.ninthTerm = term9
+        this.seventhTerm = term7;
+        this.eighthTerm = term8
     }
-    printPrequisistes(){
-        console.log(this.Prerequisites)
-    }
+
 }
+
+
+
 
 let math101 = new Course("Math 101" , 4 , "Math Department" , true , false , null ,null , null)
 let math102 = new Course("Math 102" , 4 , "Math Department" , true , false , [math101] ,null , null)
@@ -97,4 +99,21 @@ let swe412 =  new Course("SWE 412" , 2 , "Software Engineering Department" , fal
 
 
 
-math102.printPrequisistes()
+// math102.printPrequisistes()
+const swePlan =new Plan() 
+swePlan.firstTerm = [math101, eng101, pe101, ics104, phys101 , ias111]
+swePlan.secondTerm = [math102 , eng102, ics108 , phys102, ias121]
+swePlan.thirdterm = [math201 , ise291, swe206 , ics202, chem101,ias212 ]
+swePlan.fourthTerm = [math208 , coe292, swe216 , ics253, coe233 ]
+swePlan.fifthTerm= [stat319 , swe316, ics321 , ics343, swe387, bus200 ]
+swePlan.sixthTerm= [swe363 , eng214, swe326 , ics344, cgs392 ]
+swePlan.summerTerm= [swe399]
+swePlan.seventhTerm= [swexxx , swexxx, swe439 , swe411, iasxxx ]
+swePlan.eighthTerm= [swexxx  , swexxx, swe412 , ics433, gsxxx ]
+
+let sweStringified = JSON.stringify(swePlan , null , 3)
+fs.writeFile ("swePlan.json", sweStringified, function(err) {
+    if (err) throw err;
+    console.log('complete');
+    }
+);
