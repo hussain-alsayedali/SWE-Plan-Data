@@ -101,18 +101,23 @@ let swe412 =  new Course("SWE 412" , 2 , "Software Engineering Department" , fal
 
 // math102.printPrequisistes()
 const swePlan =new Plan() 
-swePlan.firstTerm = [math101, eng101, pe101, ics104, phys101 , ias111]
-swePlan.secondTerm = [math102 , eng102, ics108 , phys102, ias121]
-swePlan.thirdterm = [math201 , ise291, swe206 , ics202, chem101,ias212 ]
-swePlan.fourthTerm = [math208 , coe292, swe216 , ics253, coe233 ]
-swePlan.fifthTerm= [stat319 , swe316, ics321 , ics343, swe387, bus200 ]
-swePlan.sixthTerm= [swe363 , eng214, swe326 , ics344, cgs392 ]
-swePlan.summerTerm= [swe399]
-swePlan.seventhTerm= [swexxx , swexxx, swe439 , swe411, iasxxx ]
-swePlan.eighthTerm= [swexxx  , swexxx, swe412 , ics433, gsxxx ]
+firstTerm = [math101, eng101, pe101, ics104, phys101 , ias111]
+secondTerm = [math102 , eng102, ics108 , phys102, ias121]
+thirdterm = [math201 , ise291, swe206 , ics202, chem101,ias212 ]
+fourthTerm = [math208 , coe292, swe216 , ics253, coe233 ]
+fifthTerm= [stat319 , swe316, ics321 , ics343, swe387, bus200 ]
+sixthTerm= [swe363 , eng214, swe326 , ics344, cgs392 ]
+summerTerm= [swe399]
+seventhTerm= [swexxx , swexxx, swe439 , swe411, iasxxx ]
+eighthTerm= [swexxx  , swexxx, swe412 , ics433, gsxxx ]
+
+
+let swePlanNoClass = [firstTerm, secondTerm, thirdterm, fourthTerm, fifthTerm, sixthTerm , summerTerm, seventhTerm, eighthTerm]
+
+let sweStringifiedNoClass = JSON.stringify(swePlanNoClass, null, 3)
 
 let sweStringified = JSON.stringify(swePlan , null , 3)
-fs.writeFile ("swePlan.json", sweStringified, function(err) {
+fs.writeFile ("swePlanNoClass.json", sweStringifiedNoClass, function(err) {
     if (err) throw err;
     console.log('complete');
     }
