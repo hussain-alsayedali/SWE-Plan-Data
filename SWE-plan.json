@@ -1,0 +1,1452 @@
+[
+   [
+      {
+         "name": "Math 101",
+         "credits": 4,
+         "hasRecaitaiton": true,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": [
+            "math102"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "Eng 101",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": [
+            "eng102"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "PE 101",
+         "credits": 1,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 104",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": null,
+         "postRequisites": [
+            "ise291",
+            "ics108",
+            "ics253",
+            "coe233"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "Phys 101",
+         "credits": 4,
+         "hasRecaitaiton": true,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": [
+            "phys102"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "IAS 111",
+         "credits": 2,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "Math 102",
+         "credits": 4,
+         "hasRecaitaiton": true,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Math 101",
+               "credits": 4,
+               "hasRecaitaiton": true,
+               "hasLab": false,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "math102"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "math201",
+            "math208"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "Eng 102",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Eng 101",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "eng102"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "eng214"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 108",
+         "credits": 4,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": [
+            {
+               "name": "ICS 104",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "ise291",
+                  "ics108",
+                  "ics253",
+                  "coe233"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "swe206",
+            "ics202",
+            "ics343"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "Phys 102",
+         "credits": 4,
+         "hasRecaitaiton": true,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Phys 101",
+               "credits": 4,
+               "hasRecaitaiton": true,
+               "hasLab": false,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "phys102"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "IAS 121",
+         "credits": 2,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "Math 201",
+         "credits": 4,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Math 102",
+               "credits": 4,
+               "hasRecaitaiton": true,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "Math 101",
+                     "credits": 4,
+                     "hasRecaitaiton": true,
+                     "hasLab": false,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "math102"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "math201",
+                  "math208"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ISE 291",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": [
+            "coe292"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "SWE 206",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": [
+            {
+               "name": "ICS 108",
+               "credits": 4,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 104",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "ise291",
+                        "ics108",
+                        "ics253",
+                        "coe233"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe206",
+                  "ics202",
+                  "ics343"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "swe216",
+            "swe316"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 202",
+         "credits": 4,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": [
+            {
+               "name": "ICS 108",
+               "credits": 4,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 104",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "ise291",
+                        "ics108",
+                        "ics253",
+                        "coe233"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe206",
+                  "ics202",
+                  "ics343"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "ics321"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "Chem 101",
+         "credits": 4,
+         "hasRecaitaiton": true,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "IAS 212",
+         "credits": 2,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "Math 208",
+         "credits": 4,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            "math102"
+         ],
+         "postRequisites": null,
+         "preStanding": null
+      },
+      {
+         "name": "COE 292",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": [
+            {
+               "name": "ISE 291",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "coe292"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "SWE 216",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "SWE 206",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 108",
+                     "credits": 4,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": [
+                        {
+                           "name": "ICS 104",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": null,
+                           "postRequisites": [
+                              "ise291",
+                              "ics108",
+                              "ics253",
+                              "coe233"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe206",
+                        "ics202",
+                        "ics343"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe216",
+                  "swe316"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "swe326"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 202",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "ICS 104",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "ise291",
+                  "ics108",
+                  "ics253",
+                  "coe233"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "COE 233",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "ICS 104",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "ise291",
+                  "ics108",
+                  "ics253",
+                  "coe233"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "ics433"
+         ],
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "Stat 319",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": [
+            {
+               "name": "Math 102",
+               "credits": 4,
+               "hasRecaitaiton": true,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "Math 101",
+                     "credits": 4,
+                     "hasRecaitaiton": true,
+                     "hasLab": false,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "math102"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "math201",
+                  "math208"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "swe439"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "SWE 316",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "SWE 206",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 108",
+                     "credits": 4,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": [
+                        {
+                           "name": "ICS 104",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": null,
+                           "postRequisites": [
+                              "ise291",
+                              "ics108",
+                              "ics253",
+                              "coe233"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe206",
+                        "ics202",
+                        "ics343"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe216",
+                  "swe316"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "swe439",
+            "swe411"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 321",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "ICS 202",
+               "credits": 4,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 108",
+                     "credits": 4,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": [
+                        {
+                           "name": "ICS 104",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": null,
+                           "postRequisites": [
+                              "ise291",
+                              "ics108",
+                              "ics253",
+                              "coe233"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe206",
+                        "ics202",
+                        "ics343"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "ics321"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 343",
+         "credits": 4,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": [
+            {
+               "name": "ICS 108",
+               "credits": 4,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 104",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "ise291",
+                        "ics108",
+                        "ics253",
+                        "coe233"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe206",
+                  "ics202",
+                  "ics343"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "ics344"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "SWE 387",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": [
+            "swe411"
+         ],
+         "preStanding": "junior",
+         "teachers": null
+      },
+      {
+         "name": "BUS 200",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "SWE 363",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": "junior",
+         "teachers": null
+      },
+      {
+         "name": "Eng 214",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Eng 102",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "Eng 101",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": false,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "eng102"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "eng214"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "cgs392"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "SWE 326",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "SWE 216",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "SWE 206",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": [
+                        {
+                           "name": "ICS 108",
+                           "credits": 4,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": [
+                              {
+                                 "name": "ICS 104",
+                                 "credits": 3,
+                                 "hasRecaitaiton": false,
+                                 "hasLab": true,
+                                 "PreRequisites": null,
+                                 "postRequisites": [
+                                    "ise291",
+                                    "ics108",
+                                    "ics253",
+                                    "coe233"
+                                 ],
+                                 "preStanding": null,
+                                 "teachers": null
+                              }
+                           ],
+                           "postRequisites": [
+                              "swe206",
+                              "ics202",
+                              "ics343"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe216",
+                        "swe316"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe326"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "swe412"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 344",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "ICS 343",
+               "credits": 4,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 108",
+                     "credits": 4,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": [
+                        {
+                           "name": "ICS 104",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": null,
+                           "postRequisites": [
+                              "ise291",
+                              "ics108",
+                              "ics253",
+                              "coe233"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe206",
+                        "ics202",
+                        "ics343"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "ics344"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "CGS 392",
+         "credits": 1,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Eng 214",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "Eng 102",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": false,
+                     "PreRequisites": [
+                        {
+                           "name": "Eng 101",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": false,
+                           "PreRequisites": null,
+                           "postRequisites": [
+                              "eng102"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "eng214"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "cgs392"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "SWE 399",
+         "credits": 0,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Eng 214",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "Eng 102",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": false,
+                     "PreRequisites": [
+                        {
+                           "name": "Eng 101",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": false,
+                           "PreRequisites": null,
+                           "postRequisites": [
+                              "eng102"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "eng214"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "cgs392"
+               ],
+               "preStanding": null,
+               "teachers": null
+            },
+            {
+               "name": "SWE 363",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": null,
+               "postRequisites": null,
+               "preStanding": "junior",
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "SWE XXX",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null
+      },
+      {
+         "name": "SWE XXX",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null
+      },
+      {
+         "name": "SWE 439",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "Stat 319",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "Math 102",
+                     "credits": 4,
+                     "hasRecaitaiton": true,
+                     "hasLab": false,
+                     "PreRequisites": [
+                        {
+                           "name": "Math 101",
+                           "credits": 4,
+                           "hasRecaitaiton": true,
+                           "hasLab": false,
+                           "PreRequisites": null,
+                           "postRequisites": [
+                              "math102"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "math201",
+                        "math208"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe439"
+               ],
+               "preStanding": null,
+               "teachers": null
+            },
+            {
+               "name": "SWE 316",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "SWE 206",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": [
+                        {
+                           "name": "ICS 108",
+                           "credits": 4,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": [
+                              {
+                                 "name": "ICS 104",
+                                 "credits": 3,
+                                 "hasRecaitaiton": false,
+                                 "hasLab": true,
+                                 "PreRequisites": null,
+                                 "postRequisites": [
+                                    "ise291",
+                                    "ics108",
+                                    "ics253",
+                                    "coe233"
+                                 ],
+                                 "preStanding": null,
+                                 "teachers": null
+                              }
+                           ],
+                           "postRequisites": [
+                              "swe206",
+                              "ics202",
+                              "ics343"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe216",
+                        "swe316"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe439",
+                  "swe411"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "SWE 411",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": [
+            {
+               "name": "SWE 316",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "SWE 206",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": [
+                        {
+                           "name": "ICS 108",
+                           "credits": 4,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": [
+                              {
+                                 "name": "ICS 104",
+                                 "credits": 3,
+                                 "hasRecaitaiton": false,
+                                 "hasLab": true,
+                                 "PreRequisites": null,
+                                 "postRequisites": [
+                                    "ise291",
+                                    "ics108",
+                                    "ics253",
+                                    "coe233"
+                                 ],
+                                 "preStanding": null,
+                                 "teachers": null
+                              }
+                           ],
+                           "postRequisites": [
+                              "swe206",
+                              "ics202",
+                              "ics343"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe216",
+                        "swe316"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe439",
+                  "swe411"
+               ],
+               "preStanding": null,
+               "teachers": null
+            },
+            {
+               "name": "SWE 387",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": null,
+               "postRequisites": [
+                  "swe411"
+               ],
+               "preStanding": "junior",
+               "teachers": null
+            }
+         ],
+         "postRequisites": [
+            "swe412"
+         ],
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "IAS xxx",
+         "credits": 2,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ],
+   [
+      {
+         "name": "SWE XXX",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null
+      },
+      {
+         "name": "SWE XXX",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null
+      },
+      {
+         "name": "SWE 412",
+         "credits": 2,
+         "hasRecaitaiton": false,
+         "hasLab": true,
+         "PreRequisites": [
+            {
+               "name": "SWE 411",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": true,
+               "PreRequisites": [
+                  {
+                     "name": "SWE 316",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": false,
+                     "PreRequisites": [
+                        {
+                           "name": "SWE 206",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": [
+                              {
+                                 "name": "ICS 108",
+                                 "credits": 4,
+                                 "hasRecaitaiton": false,
+                                 "hasLab": true,
+                                 "PreRequisites": [
+                                    {
+                                       "name": "ICS 104",
+                                       "credits": 3,
+                                       "hasRecaitaiton": false,
+                                       "hasLab": true,
+                                       "PreRequisites": null,
+                                       "postRequisites": [
+                                          "ise291",
+                                          "ics108",
+                                          "ics253",
+                                          "coe233"
+                                       ],
+                                       "preStanding": null,
+                                       "teachers": null
+                                    }
+                                 ],
+                                 "postRequisites": [
+                                    "swe206",
+                                    "ics202",
+                                    "ics343"
+                                 ],
+                                 "preStanding": null,
+                                 "teachers": null
+                              }
+                           ],
+                           "postRequisites": [
+                              "swe216",
+                              "swe316"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe439",
+                        "swe411"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  },
+                  {
+                     "name": "SWE 387",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": false,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "swe411"
+                     ],
+                     "preStanding": "junior",
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe412"
+               ],
+               "preStanding": null,
+               "teachers": null
+            },
+            {
+               "name": "SWE 326",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "SWE 216",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": false,
+                     "PreRequisites": [
+                        {
+                           "name": "SWE 206",
+                           "credits": 3,
+                           "hasRecaitaiton": false,
+                           "hasLab": true,
+                           "PreRequisites": [
+                              {
+                                 "name": "ICS 108",
+                                 "credits": 4,
+                                 "hasRecaitaiton": false,
+                                 "hasLab": true,
+                                 "PreRequisites": [
+                                    {
+                                       "name": "ICS 104",
+                                       "credits": 3,
+                                       "hasRecaitaiton": false,
+                                       "hasLab": true,
+                                       "PreRequisites": null,
+                                       "postRequisites": [
+                                          "ise291",
+                                          "ics108",
+                                          "ics253",
+                                          "coe233"
+                                       ],
+                                       "preStanding": null,
+                                       "teachers": null
+                                    }
+                                 ],
+                                 "postRequisites": [
+                                    "swe206",
+                                    "ics202",
+                                    "ics343"
+                                 ],
+                                 "preStanding": null,
+                                 "teachers": null
+                              }
+                           ],
+                           "postRequisites": [
+                              "swe216",
+                              "swe316"
+                           ],
+                           "preStanding": null,
+                           "teachers": null
+                        }
+                     ],
+                     "postRequisites": [
+                        "swe326"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "swe412"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "ICS 433",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": [
+            {
+               "name": "COE 233",
+               "credits": 3,
+               "hasRecaitaiton": false,
+               "hasLab": false,
+               "PreRequisites": [
+                  {
+                     "name": "ICS 104",
+                     "credits": 3,
+                     "hasRecaitaiton": false,
+                     "hasLab": true,
+                     "PreRequisites": null,
+                     "postRequisites": [
+                        "ise291",
+                        "ics108",
+                        "ics253",
+                        "coe233"
+                     ],
+                     "preStanding": null,
+                     "teachers": null
+                  }
+               ],
+               "postRequisites": [
+                  "ics433"
+               ],
+               "preStanding": null,
+               "teachers": null
+            }
+         ],
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      },
+      {
+         "name": "GS xxx",
+         "credits": 3,
+         "hasRecaitaiton": false,
+         "hasLab": false,
+         "PreRequisites": null,
+         "postRequisites": null,
+         "preStanding": null,
+         "teachers": null
+      }
+   ]
+]
