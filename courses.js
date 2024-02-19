@@ -63,7 +63,7 @@ let math102 = new Course(
   true,
   false,
   ["MATH 101"],
-  ["MATH 201", "MATH 208"],
+  ["MATH 201", "MATH 208", "STAT 319"],
   null,
   null
 );
@@ -180,7 +180,7 @@ let ise291 = new Course(
   3,
   false,
   false,
-  null,
+  ["ICS 104"],
   ["COE 292"],
   null,
   null
@@ -328,7 +328,16 @@ let swe387 = new Course(
   "junior",
   null
 );
-let swe363 = new Course("SWE 363", 3, false, false, null, null, "junior", null);
+let swe363 = new Course(
+  "SWE 363",
+  3,
+  false,
+  false,
+  null,
+  ["SWE 399"],
+  "junior",
+  null
+);
 
 let swe399 = new Course(
   "SWE 399",
@@ -390,3 +399,75 @@ fs.writeFile("SWE-plan.json", sweStringified, function (err) {
   if (err) throw err;
   console.log("complete");
 });
+let allCourses = [
+  math101,
+  math102,
+  math201,
+  math208,
+  stat319,
+  eng101,
+  eng102,
+  eng214,
+  cgs392,
+  phys101,
+  phys102,
+  chem101,
+  ias111,
+  ias121,
+  ias212,
+  iasxxx,
+  gsxxx,
+  pe101,
+  bus200,
+  ics104,
+  ise291,
+  coe292,
+  coe233,
+  ics108,
+  ics202,
+  ics253,
+  ics321,
+  ics343,
+  ics344,
+  ics433,
+  swe206,
+  swe216,
+  swe316,
+  swe326,
+  swe387,
+  swe363,
+  swe399,
+  swexxx,
+  swe439,
+  swe411,
+  swe412,
+];
+
+function checkConsistency(courses) {
+  for (let course of courses) {
+    for (let preReq of course.PreRequisites || []) {
+      let preReqCourse = courses.find((c) => c.name === preReq);
+      if (
+        preReqCourse &&
+        !(preReqCourse.postRequisites || []).includes(course.name)
+      ) {
+        console.log(
+          `Inconsistency: ${course.name} is not listed as a postrequisite in ${preReqCourse.name}`
+        );
+      }
+    }
+    for (let postReq of course.postRequisites || []) {
+      let postReqCourse = courses.find((c) => c.name === postReq);
+      if (
+        postReqCourse &&
+        !(postReqCourse.PreRequisites || []).includes(course.name)
+      ) {
+        console.log(
+          `Inconsistency: ${course.name} is not listed as a prerequisite in ${postReqCourse.name}`
+        );
+      }
+    }
+  }
+}
+
+checkConsistency(allCourses);
