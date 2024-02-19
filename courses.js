@@ -48,45 +48,45 @@ class Plan {
 }
 
 let math101 = new Course(
-  "Math 101",
+  "MATH 101",
   4,
   true,
   false,
   null,
-  ["math102"],
+  ["MATH 102"],
   null,
   null
 );
 let math102 = new Course(
-  "Math 102",
+  "MATH 102",
   4,
   true,
   false,
-  [math101],
-  ["math201", "math208"],
+  ["MATH 101"],
+  ["MATH 201", "MATH 208"],
   null,
   null
 );
 
 let math201 = new Course(
-  "Math 201",
+  "MATH 201",
   4,
   false,
   false,
-  [math102],
+  ["MATH 102"],
   null,
   null,
   null
 );
-let math208 = new Course("Math 208", 4, false, false, ["math102"], null, null);
+let math208 = new Course("MATH 208", 4, false, false, ["MATH 102"], null, null);
 
 let stat319 = new Course(
-  "Stat 319",
+  "STAT 319",
   3,
   false,
   true,
-  [math102],
-  ["swe439"],
+  ["MATH 102"],
+  ["SWE 439"],
   null,
   null
 );
@@ -97,7 +97,7 @@ let eng101 = new Course(
   false,
   false,
   null,
-  ["eng102"],
+  ["Eng 102"],
   null,
   null
 );
@@ -106,8 +106,8 @@ let eng102 = new Course(
   3,
   false,
   false,
-  [eng101],
-  ["eng214"],
+  ["Eng 101"],
+  ["Eng 214"],
   null,
   null
 );
@@ -116,12 +116,21 @@ let eng214 = new Course(
   3,
   false,
   false,
-  [eng102],
-  ["cgs392"],
+  ["Eng 102"],
+  ["CGS 392"],
   null,
   null
 );
-let cgs392 = new Course("CGS 392", 1, false, false, [eng214], null, null, null);
+let cgs392 = new Course(
+  "CGS 392",
+  1,
+  false,
+  false,
+  ["Eng 214"],
+  null,
+  null,
+  null
+);
 
 let phys101 = new Course(
   "Phys 101",
@@ -129,7 +138,7 @@ let phys101 = new Course(
   true,
   false,
   null,
-  ["phys102"],
+  ["Phys102"],
   null,
   null
 );
@@ -138,7 +147,7 @@ let phys102 = new Course(
   4,
   true,
   false,
-  [phys101],
+  ["Phys 101"],
   null,
   null,
   null
@@ -162,7 +171,7 @@ let ics104 = new Course(
   false,
   true,
   null,
-  ["ise291", "ics108", "ics253", "coe233"],
+  ["ISE 291", "ICS 108", "ICS 253", "COE 233"],
   null,
   null
 );
@@ -172,19 +181,28 @@ let ise291 = new Course(
   false,
   false,
   null,
-  ["coe292"],
+  ["COE 292"],
   null,
   null
 );
-let coe292 = new Course("COE 292", 3, false, [ise291], null, null, null, null);
+let coe292 = new Course(
+  "COE 292",
+  3,
+  false,
+  ["ISE 291"],
+  null,
+  null,
+  null,
+  null
+);
 
 let coe233 = new Course(
   "COE 233",
   3,
   false,
   false,
-  [ics104],
-  ["ics433"],
+  ["ICS 104"],
+  ["ICS 433"],
   null,
   null
 );
@@ -194,8 +212,8 @@ let ics108 = new Course(
   4,
   false,
   true,
-  [ics104],
-  ["swe206", "ics202", "ics343"],
+  ["ICS 104"],
+  ["SWE 206", "ICS 202", "ICS 343"],
   null,
   null
 );
@@ -204,33 +222,69 @@ let ics202 = new Course(
   4,
   false,
   true,
-  [ics108],
-  ["ics321"],
+  ["ICS 108"],
+  ["ICS 321"],
   null,
   null
 );
-let ics253 = new Course("ICS 202", 3, false, false, [ics104], null, null, null);
-let ics321 = new Course("ICS 321", 3, false, false, [ics202], null, null, null);
+let ics253 = new Course(
+  "ICS 202",
+  3,
+  false,
+  false,
+  ["ICS 104"],
+  null,
+  null,
+  null
+);
+let ics321 = new Course(
+  "ICS 321",
+  3,
+  false,
+  false,
+  ["ICS 202"],
+  null,
+  null,
+  null
+);
 let ics343 = new Course(
   "ICS 343",
   4,
   false,
   true,
-  [ics108],
-  ["ics344"],
+  ["ICS 108"],
+  ["ICS 344"],
   null,
   null
 );
-let ics344 = new Course("ICS 344", 3, false, false, [ics343], null, null, null);
-let ics433 = new Course("ICS 433", 3, false, false, [coe233], null, null, null);
+let ics344 = new Course(
+  "ICS 344",
+  3,
+  false,
+  false,
+  ["ICS 343"],
+  null,
+  null,
+  null
+);
+let ics433 = new Course(
+  "ICS 433",
+  3,
+  false,
+  false,
+  ["COE 233"],
+  null,
+  null,
+  null
+);
 
 let swe206 = new Course(
   "SWE 206",
   3,
   false,
   true,
-  [ics108],
-  ["swe216", "swe316"],
+  ["ICS 108"],
+  ["SWE 216", "SWE 316"],
   null,
   null
 );
@@ -239,8 +293,8 @@ let swe216 = new Course(
   3,
   false,
   false,
-  [swe206],
-  ["swe326"],
+  ["SWE 206"],
+  ["SWE 326"],
   null,
   null
 );
@@ -249,8 +303,8 @@ let swe316 = new Course(
   3,
   false,
   false,
-  [swe206],
-  ["swe439", "swe411"],
+  ["SWE 206"],
+  ["SWE 439", "SWE 411"],
   null,
   null
 );
@@ -259,8 +313,8 @@ let swe326 = new Course(
   3,
   false,
   false,
-  [swe216],
-  ["swe412"],
+  ["SWE 216"],
+  ["SWE 412"],
   null,
   null
 );
@@ -270,7 +324,7 @@ let swe387 = new Course(
   false,
   false,
   null,
-  ["swe411"],
+  ["SWE 411"],
   "junior",
   null
 );
@@ -281,7 +335,7 @@ let swe399 = new Course(
   0,
   false,
   false,
-  [eng214, swe363],
+  ["ENG 214", "SWE 363"],
   null,
   null,
   null
@@ -293,7 +347,7 @@ let swe439 = new Course(
   3,
   false,
   false,
-  [stat319, swe316],
+  ["STAT 319", "SWE 316"],
   null,
   null,
   null
@@ -303,8 +357,8 @@ let swe411 = new Course(
   3,
   false,
   true,
-  [swe316, swe387],
-  ["swe412"],
+  ["SWE 316", "SWE 387"],
+  ["SWE 412"],
   null,
   null
 );
@@ -313,7 +367,7 @@ let swe412 = new Course(
   2,
   false,
   true,
-  [swe411, swe326],
+  ["SWE 411", "SWE 326"],
   null,
   null,
   null
