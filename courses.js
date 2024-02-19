@@ -138,7 +138,7 @@ let phys101 = new Course(
   true,
   false,
   null,
-  ["Phys102"],
+  ["Phys 102"],
   null,
   null
 );
@@ -189,8 +189,8 @@ let coe292 = new Course(
   "COE 292",
   3,
   false,
-  ["ISE 291"],
   null,
+  ["ISE 291"],
   null,
   null,
   null
