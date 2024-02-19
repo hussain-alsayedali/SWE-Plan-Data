@@ -47,14 +47,23 @@ class Plan {
   }
 }
 
-let math101 = new Course("Math 101", 4, true, false, null, null, null, null);
+let math101 = new Course(
+  "Math 101",
+  4,
+  true,
+  false,
+  null,
+  ["math102"],
+  null,
+  null
+);
 let math102 = new Course(
   "Math 102",
   4,
   true,
   false,
   [math101],
-  null,
+  ["math201", "math208"],
   null,
   null
 );
@@ -69,18 +78,7 @@ let math201 = new Course(
   null,
   null
 );
-let math208 = new Course(
-  "Math 208",
-  4,
-  false,
-  false,
-  [math102],
-  null,
-  null,
-  null
-);
-math101.postRequisites([math102]);
-math102.postRequisites([math201, math208]);
+let math208 = new Course("Math 208", 4, false, false, ["math102"], null, null);
 
 let stat319 = new Course(
   "Stat 319",
@@ -88,21 +86,53 @@ let stat319 = new Course(
   false,
   true,
   [math102],
-  null,
+  ["swe439"],
   null,
   null
 );
 
-let eng101 = new Course("Eng 101", 3, false, false, null, null, null, null);
-let eng102 = new Course("Eng 102", 3, false, false, [eng101], null, null, null);
-let eng214 = new Course("Eng 214", 3, false, false, [eng102], null, null, null);
-
+let eng101 = new Course(
+  "Eng 101",
+  3,
+  false,
+  false,
+  null,
+  ["eng102"],
+  null,
+  null
+);
+let eng102 = new Course(
+  "Eng 102",
+  3,
+  false,
+  false,
+  [eng101],
+  ["eng214"],
+  null,
+  null
+);
+let eng214 = new Course(
+  "Eng 214",
+  3,
+  false,
+  false,
+  [eng102],
+  ["cgs392"],
+  null,
+  null
+);
 let cgs392 = new Course("CGS 392", 1, false, false, [eng214], null, null, null);
 
-eng101.postRequisites([eng102]);
-eng102.postRequisites([eng214]);
-
-let phys101 = new Course("Phys 101", 4, true, false, null, null, null, null);
+let phys101 = new Course(
+  "Phys 101",
+  4,
+  true,
+  false,
+  null,
+  ["phys102"],
+  null,
+  null
+);
 let phys102 = new Course(
   "Phys 102",
   4,
@@ -113,7 +143,6 @@ let phys102 = new Course(
   null,
   null
 );
-phys101.postRequisites([phys102]);
 
 let chem101 = new Course("Chem 101", 4, true, false, null, null, null, null);
 
@@ -127,14 +156,59 @@ let pe101 = new Course("PE 101", 1, false, false, null, null, null, null);
 
 let bus200 = new Course("BUS 200", 3, false, false, null, null, null, null);
 
-let ics104 = new Course("ICS 104", 3, false, true, null, null, null, null);
-let ise291 = new Course("ISE 291", 3, false, false, null, null, null, null);
-let coe292 = new Course("COE 292", 3, false, [ise291], null, null, null);
+let ics104 = new Course(
+  "ICS 104",
+  3,
+  false,
+  true,
+  null,
+  ["ise291", "ics108", "ics253", "coe233"],
+  null,
+  null
+);
+let ise291 = new Course(
+  "ISE 291",
+  3,
+  false,
+  false,
+  null,
+  ["coe292"],
+  null,
+  null
+);
+let coe292 = new Course("COE 292", 3, false, [ise291], null, null, null, null);
 
-let coe233 = new Course("COE 233", 3, false, false, [ics104], null, null, null);
+let coe233 = new Course(
+  "COE 233",
+  3,
+  false,
+  false,
+  [ics104],
+  ["ics433"],
+  null,
+  null
+);
 
-let ics108 = new Course("ICS 108", 4, false, true, [ics104], null, null, null);
-let ics202 = new Course("ICS 202", 4, false, true, [ics108], null, null, null);
+let ics108 = new Course(
+  "ICS 108",
+  4,
+  false,
+  true,
+  [ics104],
+  ["swe206", "ics202", "ics343"],
+  null,
+  null
+);
+let ics202 = new Course(
+  "ICS 202",
+  4,
+  false,
+  true,
+  [ics108],
+  ["ics321"],
+  null,
+  null
+);
 let ics253 = new Course("ICS 202", 3, false, false, [ics104], null, null, null);
 let ics321 = new Course("ICS 321", 3, false, false, [ics202], null, null, null);
 let ics343 = new Course(
@@ -150,12 +224,6 @@ let ics343 = new Course(
 let ics344 = new Course("ICS 344", 3, false, false, [ics343], null, null, null);
 let ics433 = new Course("ICS 433", 3, false, false, [coe233], null, null, null);
 
-ics104.postRequisites([ise291, ics108, ics253, coe233]);
-ise291.postRequisites([coe292]);
-coe233.postRequisites([ics433]);
-ics108.postRequisites([swe206, ics202, ics343]);
-ics202.postRequisites([ics321]);
-ics343.postRequisites[[ics344]];
 let swe206 = new Course(
   "SWE 206",
   3,
@@ -166,10 +234,46 @@ let swe206 = new Course(
   null,
   null
 );
-let swe216 = new Course("SWE 216", 3, false, false, [swe206], null, null, null);
-let swe316 = new Course("SWE 316", 3, false, false, [swe206], null, null, null);
-let swe326 = new Course("SWE 326", 3, false, false, [swe216], null, null, null);
-let swe387 = new Course("SWE 387", 3, false, false, null, null, "junior", null);
+let swe216 = new Course(
+  "SWE 216",
+  3,
+  false,
+  false,
+  [swe206],
+  ["swe326"],
+  null,
+  null
+);
+let swe316 = new Course(
+  "SWE 316",
+  3,
+  false,
+  false,
+  [swe206],
+  ["swe439", "swe411"],
+  null,
+  null
+);
+let swe326 = new Course(
+  "SWE 326",
+  3,
+  false,
+  false,
+  [swe216],
+  ["swe412"],
+  null,
+  null
+);
+let swe387 = new Course(
+  "SWE 387",
+  3,
+  false,
+  false,
+  null,
+  ["swe411"],
+  "junior",
+  null
+);
 let swe363 = new Course("SWE 363", 3, false, false, null, null, "junior", null);
 
 let swe399 = new Course(
@@ -200,7 +304,7 @@ let swe411 = new Course(
   false,
   true,
   [swe316, swe387],
-  null,
+  ["swe412"],
   null,
   null
 );
@@ -214,16 +318,6 @@ let swe412 = new Course(
   null,
   null
 );
-swe206.postRequisites([swe216, swe316]);
-swe216.postRequisites([swe326]);
-swe316.postRequisites([swe439, swe411]);
-swe326.postRequisites([swe412]);
-swe363.postRequisites([swe399]);
-swe387.postRequisites([swe411]);
-swe411.postRequisites([swe412]);
-
-stat319.postRequisites([swe439]);
-eng214.postRequisites([cgs392, swe399]);
 
 // math102.printPrequisistes()
 let swePlan = [];
