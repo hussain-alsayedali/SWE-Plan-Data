@@ -83,7 +83,8 @@
          ],
          "postRequisites": [
             "MATH 201",
-            "MATH 208"
+            "MATH 208",
+            "STAT 319"
          ],
          "preStanding": null,
          "teachers": null
@@ -159,7 +160,9 @@
          "credits": 3,
          "hasRecaitaiton": false,
          "hasLab": false,
-         "PreRequisites": null,
+         "PreRequisites": [
+            "ICS 104"
+         ],
          "postRequisites": [
             "COE 292"
          ],
@@ -367,7 +370,9 @@
          "hasRecaitaiton": false,
          "hasLab": false,
          "PreRequisites": null,
-         "postRequisites": null,
+         "postRequisites": [
+            "SWE 399"
+         ],
          "preStanding": "junior",
          "teachers": null
       },
